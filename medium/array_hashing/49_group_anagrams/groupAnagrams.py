@@ -19,7 +19,8 @@ class Solution:
     def groupAnagrams2(self, strs):
         counts = defaultdict(list)
         for r in strs:
-            # add the string to hashmap using its sorted form as the key
+            # add the string to hashmap using its sorted form as the key,
+            # since it will be the same for each anagram
             # Sorted() returns a list which cannot be a key, so
             # we cast as a tuple
             counts[tuple(sorted(r))].append(r)
@@ -36,10 +37,13 @@ class Solution:
         # key will be this size
         for s in strs:
             count = [0] * 26
-        # Iterate through characters
+        
+        # Iterate through characters in each string
             for c in s:
-                # Return ascii code of each characted, zeroed at 'a'
+                # Return ascii code of each character, zeroed at 'a'
                 count[ord(c) - ord('a')] += 1
+        
         # Add the count to the counts dict
             counts[tuple(count)].append(s)
         return counts.values()
+    # Time complexity is O(n) because we iterate through each string, no sorting
