@@ -20,7 +20,7 @@
 # Output: [5, 3]
 
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+    def topKFrequent(self, nums, k):
         # create a dictionary to store the frequency of each number
         # create empty frequency bins 
         counts = {}
