@@ -16,7 +16,7 @@
 # Output: [0,0,9,0,0]
 
 class Solution:
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
+    def productExceptSelf(self, nums):
         # create an array to store the result
         result = [1] * len(nums)
 
