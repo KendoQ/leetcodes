@@ -32,7 +32,7 @@ class Solution:
                 longest = max(longest, length)
 
         return longest
-    # This method ensures that we visit each element max twice
+    # This method ensures that we consider each element max twice
     # Time is O(n)
 
     def longestConsecutive2(self, nums: List[int]) -> int:
@@ -67,5 +67,5 @@ class Solution:
             longest = max(longest, length)
 
         return longest
-        # This two-pointer method ensures we visit each element once,
+        # This two-pointer method ensures we consider each element once,
         # so the time complexity is O(n) and a bit faster than the first method
