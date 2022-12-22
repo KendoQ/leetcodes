@@ -14,7 +14,8 @@
 
 # The brute force method involves searching every combination
 # of numbers in at worst O(n^2) time. We can achieve better,
-# with constant extra space by using two-pointers.
+# with constant extra space by using two-pointers and 
+# exploiting the fact array is sorted
 
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
