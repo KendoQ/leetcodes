@@ -33,7 +33,7 @@ class Solution:
             if lmax < rmax:
                 L += 1
 
-                # Update lmax
+                # Update lmax first to avoid negatives
                 lmax = max(lmax, height[L])
 
                 # Update result with the amount of water stored
