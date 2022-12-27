@@ -47,6 +47,6 @@ class Solution:
                 R -= 1
 
         return res
-    # We pass through the area once using two pointers
+    # We pass through the array once using two pointers
     # Time: O(n)
     # Space: O(1)
