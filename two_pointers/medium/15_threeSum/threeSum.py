@@ -62,5 +62,5 @@ class Solution:
         return res
     # We sort the array and then loop through it at most
     # twice. We avoid creating a hash so space is constant
-    # Time complexity: O(nlogn) + O(n^2) = O(n^2)
+    # Time: O(nlogn) + O(n^2) = O(n^2)
     # Space: O(1) or O(n) depending on the sort operation
