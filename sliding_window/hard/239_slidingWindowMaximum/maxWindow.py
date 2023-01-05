@@ -45,7 +45,6 @@ class Solution:
 
         # Iterate over the right pointer
         for R in range(len(nums)):
-
             # While deque is not empty and smaller
             # values exist on the left
             while W and nums[R] > nums[W[-1]]:
@@ -75,4 +74,3 @@ class Solution:
     # and use additonal space on for deque window
     # and the result
     # Time: O(n), Space: O(n)
-
